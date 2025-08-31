@@ -27,6 +27,16 @@ h1 {
   color: #8b5e3c; 
 }
 
+    /* Fade out after 60s */
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  .disappear {
+    animation: fadeOut 2s ease forwards;
+    animation-delay: 60s; /* wait 1 minute */
+  }
+
 @media (max-width: 767px) {
   .text-card {
     padding: 20px;
